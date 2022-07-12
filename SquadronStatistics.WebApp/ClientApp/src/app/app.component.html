@@ -1,0 +1,9 @@
+<app-appHeader></app-appHeader>
+<div class="container">
+    <app-fileUploader requiredFileType=".txt"></app-fileUploader>
+    <app-nothingToShow *ngIf="isDbEmpty"></app-nothingToShow>
+    <app-filesGridDisplay *ngIf="!isDbEmpty"></app-filesGridDisplay>
+    <app-chart *ngIf="!isDbEmpty"></app-chart>
+</div>
+
+

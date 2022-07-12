@@ -1,0 +1,37 @@
+.file-input {
+    display: none;
+  }
+
+  .file-uploader-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+.upload-button {
+    color: rgb(8,84,252);
+}
+
+.progress-upload {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.upload-placeholder {
+    /* width: 150px; */
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgb(246, 246, 246);
+    margin-right: 20px;
+}
+
+.child {
+    display: inline-block;
+}
+
+.message-holder {
+    font-style: italic;
+    font-weight: 100;
+}

@@ -1,0 +1,31 @@
+<div class="file-uploader-container">
+  <input type="file" class="file-input" onclick="this.value = null" [accept]="requiredFileType"
+    (change)="onFileSelected($event)" #fileUpload>
+
+  <div class="file-upload">
+
+    <div class="upload-placeholder child">
+      {{fileName || "No file uploaded yet."}}
+    </div>
+
+    <button mat-raised-button class="upload-button child" matTooltip="Upload file" matTooltipPosition="after"
+      (click)="fileUpload.click()">
+      <mat-icon>attach_file</mat-icon>
+    </button>
+  </div>
+
+  <div class="child message-holder">
+    <span *ngIf="resultMessage">
+      {{resultMessage}}
+    </span>
+  </div>
+
+
+  <div class="progress-upload">
+    <mat-progress-bar mode="buffer" *ngIf="isUploading">
+    </mat-progress-bar>
+  </div>
+
+  <mat-divider></mat-divider>
+
+</div>
