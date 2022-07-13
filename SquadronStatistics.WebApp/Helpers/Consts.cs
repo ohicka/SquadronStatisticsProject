@@ -2,6 +2,6 @@
 {
     public static class Consts
     {
-        public const string StatisticLineRegex = @"(^[-][ ][a-zA-Z]+[,][ ][1-9]\d*[,][ ][a-z]+$)";
+        public const string StatisticLineRegex = @"(^[-][ ][A-Za-z]+[,][ ][1-9]\d*[,][ ][A-Za-z]+$)";
     }
 }

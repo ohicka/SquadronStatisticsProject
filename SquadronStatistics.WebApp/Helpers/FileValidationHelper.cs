@@ -59,7 +59,7 @@ namespace SquadronStatistics.WebApp.Helpers
             Array.Copy(colorsArray, allColors, colorsArray.Length);
 
 
-            return allColors.Any(item => item.ToString().ToLowerInvariant() == color);
+            return allColors.Any(item => item.ToString().ToLowerInvariant() == color.ToLowerInvariant());
 
         }
     }

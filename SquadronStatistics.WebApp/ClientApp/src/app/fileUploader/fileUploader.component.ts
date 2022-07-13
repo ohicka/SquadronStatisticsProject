@@ -21,8 +21,6 @@ export class FileUploaderComponent implements OnInit {
   @Input()
     requiredFileType:string;
 
-    //@Output() onUploadCompleted = new EventEmitter<boolean>();
-
   constructor(
     private filesServive: FilesService,
     private refreshDataService: RefreshDataService
